@@ -1,0 +1,28 @@
+html {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 22px;
+  line-height: 28px;
+  padding: 14px;
+}
+
+h1,
+h2,
+h3,
+p {
+  padding-bottom: 28px;
+}
+/* Temporary code from the lesson on monday*/
+h1 {
+  font-size: 33.12px;
+  line-height: 42px; /*28px * 1.5 = 45*/
+  padding-bottom: 22px;
+}
+
+h2 {
+  font-size: 33.12;
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+}
