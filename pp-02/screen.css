@@ -1,7 +1,7 @@
 html {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 22px;
-  line-height: 28px;
+  font-size: 16px;
+  line-height: 19px;
   padding: 14px;
 }
 
@@ -25,4 +25,49 @@ h2 {
 
 a {
   text-decoration: none;
+}
+/* Temporary code from Lesson on Wendsday*/
+@media screen and (min-width: 300px) {
+  figure {
+    position: relative;
+  }
+  figcaption {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    padding: 6px;
+  }
+}
+
+@media screen and (min-width: 440px) {
+  html {
+    font-size: 22px;
+    line-height: 24px;
+  }
+}
+
+@media screen and (min-width: 585px) {
+  figure {
+    display: grid;
+    grid-template-columns: 4fr 3fr;
+    grid-template-rows: auto;
+    grid-gap: 12px;
+    gap: 20px;
+  }
+  figcaption {
+    position: static;
+    grid-column: 2;
+    grid-row: 1;
+  }
+}
+
+@media screen and (min-width: 100px) {
+  .photo-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 24px;
+    gap: 24px;
+  }
+
 }
